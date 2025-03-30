@@ -12,10 +12,24 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Poppins', sans-serif; }
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Victor Diaz</h1>
+      <div class="space-x-4 text-sm md:text-base">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#why" class="hover:text-blue-600">Why Me</a>
+        <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
   <section class="text-center py-20 bg-black text-white">
@@ -30,35 +44,28 @@
     </div>
   </section>
 
-  <!-- Reveal Button -->
-  <div class="text-center my-8">
-    <button onclick="document.getElementById('extraSections').classList.remove('hidden'); this.classList.add('hidden');" class="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition">
-      See More
-    </button>
-  </div>
-
-  <!-- Hidden Sections -->
-  <div id="extraSections" class="hidden space-y-10 px-6 max-w-4xl mx-auto pb-16">
-    <div id="about">
-      <h2 class="text-3xl font-bold mb-2">About</h2>
+  <!-- Content Sections -->
+  <div class="space-y-20 px-6 max-w-4xl mx-auto pb-20">
+    <section id="about">
+      <h2 class="text-3xl font-bold mb-4">About</h2>
       <p>Victor Diaz is a driven entrepreneur with expertise in Amazon FBA and brand building.</p>
-    </div>
-    <div id="services">
-      <h2 class="text-3xl font-bold mb-2">Services</h2>
+    </section>
+    <section id="services">
+      <h2 class="text-3xl font-bold mb-4">Services</h2>
       <p>Product research, brand creation, store optimization, and FBA coaching.</p>
-    </div>
-    <div id="why">
-      <h2 class="text-3xl font-bold mb-2">Why Me</h2>
+    </section>
+    <section id="why">
+      <h2 class="text-3xl font-bold mb-4">Why Me</h2>
       <p>Results-driven, passionate, and deeply experienced in e-commerce strategy.</p>
-    </div>
-    <div id="testimonials">
-      <h2 class="text-3xl font-bold mb-2">Testimonials</h2>
+    </section>
+    <section id="testimonials">
+      <h2 class="text-3xl font-bold mb-4">Testimonials</h2>
       <p>"Victor helped me scale my store to 6 figures in 3 months!" – Satisfied Client</p>
-    </div>
-    <div id="contact">
-      <h2 class="text-3xl font-bold mb-2">Contact</h2>
+    </section>
+    <section id="contact">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
       <p>Email: victor@example.com | Instagram: @victor_diaz</p>
-    </div>
+    </section>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
